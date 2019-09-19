@@ -1,9 +1,20 @@
 // const content = document.querySelector('svg');
 // content.parentNode.removeChild(content);
 
-// let jon = 7;
-
 // import {howMany} from './background.js'
+
+// function getWordCounts(nodeList) {
+//     var wordCount = 0;
+//     for ( var i = 0; i < nodeList.length; i++ ) {
+//         wordCount += nodeList[i].textContent.trim().split(' ').length;
+//     }
+//     return wordCount;
+// }
+
+// const words = getWordCounts(document.querySelectorAll('p'));
+
+
+
 let now = new Date()
-document.title = `${now.getHours()} ${document.title}`;
+document.title = `${now.getHours()}${now.getMinutes()} ${document.title}`;
 
