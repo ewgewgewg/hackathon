@@ -18,3 +18,6 @@
 let now = new Date()
 document.title = `${now.getHours()}${now.getMinutes()} ${document.title}`;
 
+document.title = `${1} ${document.title}`;
+localStorage.setItem('counter', '0');
+let x = parseInt(localStorage.getItem('counter'));

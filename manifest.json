@@ -1,15 +1,21 @@
 {
-  "name": "Extension for People Who Make Good Decisions",
-  "version": "1.0",
-  "description": "Fixing your life and tabs maybe!",
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
-  "content_scripts": [
-    {"matches": ["<all_urls>"],
-    "js": ["./main.js"]}
-  ],
-  "permissions": ["storage"],
-  "manifest_version": 2
-}
+    "manifest_version": 2,
+    "name": "Focus",
+    "version": "1.0",
+    "content_scripts": [
+        {
+          "matches":  ["<all_urls>"],
+          "js": ["./main.js"]
+        }
+      ],
+      "permissions": [
+        "audioCapture",
+        "background",
+        "browser",
+        "geolocation",
+        "storage",
+        "unlimitedStorage",
+        "videoCapture",
+        "tabs"
+      ]
+  }
