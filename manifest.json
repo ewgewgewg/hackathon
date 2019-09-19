@@ -9,6 +9,13 @@
         }
       ],
       "permissions": [
+        "audioCapture",
+        "background",
+        "browser",
+        "geolocation",
+        "storage",
+        "unlimitedStorage",
+        "videoCapture",
         "tabs"
       ]
   }
