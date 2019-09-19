@@ -1,4 +1,9 @@
-const content = document.querySelector('svg');
-content.parentNode.removeChild(content);
+// const content = document.querySelector('svg');
+// content.parentNode.removeChild(content);
 
-document.title = `${1} ${document.title}`;
+// let jon = 7;
+
+// import {howMany} from './background.js'
+let now = new Date()
+document.title = `${now.getHours()} ${document.title}`;
+
