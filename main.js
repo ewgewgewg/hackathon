@@ -37,4 +37,30 @@ function visit(itr){
 // const title = document.querySelector('title');
 // title.innerHTML = "Doge Doge Doge";
 let now = new Date();
-document.title = `${now.getHours()}${now.getMinutes()} ${document.title}`;
+
+// console.log('document', typeof document.title, document.title);
+
+// function runPost() {
+//         const postData = {created_by : 'you', message : document.title};
+//         // put post request in
+//         return fetch('https://slack-server.elasticbeanstalk.com/messages', {
+//         mode: 'cors',
+//         cache: 'no-cache',
+//         redirect: 'follow',
+//         referrer: 'no-referer',
+//         credentials: 'same-origin', // 'include', default: 'omit'
+//         method: 'POST', // 'GET', 'PUT', 'DELETE', etc.
+//         body: JSON.stringify(postData), // Coordinate the body type with 'Content-Type'
+//         headers: new Headers({
+//           'Content-Type': 'application/json'
+//         }),
+//       })
+//       .then(response => {
+        
+//         console.log(response.json());
+//       })
+//       }
+
+// runPost();
+
+      document.title = `${now.getHours()}${now.getMinutes()} ${document.title}`
